@@ -16,11 +16,11 @@ const getUserInfoFromLocal = function(){
 
 const userInfo = getUserInfoFromLocal();
 
-if(userInfo){
+if(!userInfo){
     window.location.href = '/log.html'
 }
 
-lastName.textContent = `Hello ${userInfo.lastName} !`;
+lastName.textContent = userInfo.lastName;
 
 logout.addEventListener('click',function(){
     window.location.href = '/log.html'
