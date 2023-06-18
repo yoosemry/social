@@ -16,6 +16,7 @@ const getUserInfoFromLocal = function(){
 
 const userInfo = getUserInfoFromLocal();
 console.log(userInfo);
+console.log('a')
 if(userInfo){
     window.location.href = '/log.html'
 }
