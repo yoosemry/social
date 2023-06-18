@@ -9,7 +9,7 @@ const postDisplay = document.querySelector('.posts');
 // get user information
 const getUserInfoFromLocal = function(){
     let users = localStorage.getItem('userInformation');
-    return users ? JSON.parse(users) : [];
+    return users ? JSON.parse(users) : [""];
 }
 
 
