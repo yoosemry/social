@@ -3,7 +3,7 @@ const lastName = document.querySelector('.lastname')
 const imageUrl = document.querySelector('#imageUrl')
 const title = document.querySelector('#title')
 const article = document.querySelector('#article')
-const btnPost = document.querySelector('.btn-Post');
+const btnPost = document.querySelector('#submitPost');
 const postDisplay = document.querySelector('.posts');
 
 // get user information
@@ -53,7 +53,7 @@ const deletePost = function(postIndex){
     displayArticles();
 }
 
-btnPost.addEventListener('click',function(e){
+btnPost.addEventListener('submit',function(e){
     e.preventDefault();
     let lastArr = getPosts().length -1;
     lastArr = lastArr + 1;
